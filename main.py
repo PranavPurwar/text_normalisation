@@ -52,6 +52,9 @@ def removal(words: list) -> list:
 
 if __name__ == "__main__":
     data = input("Enter a data: ").lower()
+    if (data == ""):
+        f = open("data.txt", "r")
+        data = f.read().lower()
     print()
     print("Segmentation")
     print()
